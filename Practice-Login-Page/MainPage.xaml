@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Edibubble.MainPage">
+    <ContentPage.Content>
+            <StackLayout Padding="20"
+                         VerticalOptions="CenterAndExpand">
+
+                <Label FontFamily="Roboto"
+                       CharacterSpacing="0.44"
+                       HorizontalTextAlignment="Center"
+                       Opacity="1"
+                       FontSize="11">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="By continuing, you agree to edibubble’s " />
+                            <Span Text="Terms of Service"
+                                  TextColor="#177DFC"
+                                  FontAttributes="Bold">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                                          CommandParameter="https://xamarin.com" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text=" and acknowledge edibubble’s " />
+                            <Span Text="Privacy Policy."
+                                  TextColor="#177DFC"
+                                  FontAttributes="Bold">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                                          CommandParameter="https://xamarin.com" />
+                                </Span.GestureRecognizers>
+                             </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Text="LOG IN WITH GOOGLE"
+                        HeightRequest="47"
+                        WidthRequest="231"
+                        CornerRadius="24"
+                        BorderWidth="1"
+                        BorderColor="#707070"
+                        Opacity="1"
+                        TextColor="#666666"
+                        BackgroundColor="#FFFFFF"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Font="Roboto"
+                        FontAttributes="Bold"
+                        Margin="0,34,0,21"
+                        CharacterSpacing="1.16"
+                        FontSize="13"/>
+
+                <Button Text="LOG IN WITH FACEBOOK"
+                        HeightRequest="48"
+                        WidthRequest="231"
+                        CornerRadius="24"
+                        BorderWidth="1"
+                        BorderColor="#707070"
+                        Opacity="1"
+                        TextColor="White"
+                        BackgroundColor="#4768AD"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Margin="0,0,0,21"
+                        CharacterSpacing="1.16"
+                        FontSize="13"/>
+
+                <Button Text="LOG IN WITH EMAIL"
+                        HeightRequest="48"
+                        WidthRequest="231"
+                        CornerRadius="24"
+                        BorderWidth="1"
+                        BorderColor="#707070"
+                        Opacity="1"
+                        TextColor="White"
+                        BackgroundColor="#3E8DF0"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Margin="0,0,0,44"
+                        CharacterSpacing="1.16"
+                        FontSize="13"/>
+
+                <Label FontFamily="Roboto"
+                       CharacterSpacing="0.56"
+                       HorizontalTextAlignment="Center"
+                       Opacity="1"
+                       FontSize="14">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Don’t have an edibubble account? " />
+                            <Span Text="Sign Up!"
+                                  TextColor="Blue"
+                                  TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                                          CommandParameter="https://xamarin.com" />
+                                </Span.GestureRecognizers>
+                            </Span>  
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+    </ContentPage.Content>  
+</ContentPage>
